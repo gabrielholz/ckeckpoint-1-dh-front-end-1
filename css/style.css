@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Cabin', sans-serif;
+
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+h2{
+  font-size: 1.35rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+header {
+  background: rgb(100, 136, 184);
+  background: linear-gradient(0deg, rgba(100, 136, 184, 1) 0%, rgba(255, 255, 255, 0.48783263305322133) 100%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px
+}
+
+header nav ul li a {
+  background-color: #f00;
+  padding: 10px;
+  border-radius: 5%;
+  transition: padding .5s;
+}
+
+header nav ul li a:hover {
+  background-color: #f00;
+  padding: 15px;
+  border-radius: 5%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#banner {
+  background-image: url('../img/portico.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(33, 255, 33, 0.393);
+  height: 532px;
+  width: 100%
+}
+
+#curiosidades {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 80%;
+  height: 534px;
+
+}
+
+#curiosidades h2 {
+  color: #000;
+  padding-bottom: 1%
+}
+
+.curiosidades__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  height: 90%;
+}
+
+.curiosidades__cards__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+  border-radius: 10px;
+  border: .5px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, .3);
+
+}
+
+.curiosidades__cards__card__img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px ;
+}
+
+.curiosidades__cards__card__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  
+}
+
+.curiosidades__cards__card__text {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.curiosidades__cards__card__text p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+
+#video {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 80%;
+  height: 400px;
+}
+
+#video iframe {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px
+}
+
+#mapa {
+  margin-top: 5%;
+  width: 40%;
+  height: 400px;
+}
+
+#mapa iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px
+}
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background-color: #444;
+  margin-top: 10%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
