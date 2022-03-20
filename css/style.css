@@ -9,15 +9,15 @@
 
 }
 
-h1{
+h1 {
   font-size: 1.5rem;
 }
 
-h2{
+h2 {
   font-size: 1.35rem;
 }
 
-h2{
+h2 {
   font-size: 1.2rem;
 }
 
@@ -111,7 +111,6 @@ h1, h2, h3 {
   flex-direction: column;
   margin-top: 5%;
   width: 80%;
-  height: 534px;
 
 }
 
@@ -146,14 +145,14 @@ h1, h2, h3 {
   flex-direction: column;
   width: 100%;
   height: 50%;
-  border-radius: 10px ;
+  border-radius: 10px;
 }
 
 .curiosidades__cards__card__img img {
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0px 0px;
-  
+
 }
 
 .curiosidades__cards__card__text {
@@ -198,6 +197,8 @@ h1, h2, h3 {
 
 
 footer {
+  background: rgb(100, 136, 184);
+  background: linear-gradient(0deg, rgba(100, 136, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -211,4 +212,64 @@ footer ul {
   justify-content: center;
   align-items: center;
   gap: 70px;
+}
+
+@media (max-width: 460px) {
+
+  /*mobile*/
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20%
+  }
+
+  .curiosidades__cards{
+    flex-direction: column;
+  }
+
+  .curiosidades__cards__card{
+    width: 80%;
+  }
+
+  #mapa {
+    margin-top: 10%;
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 461px) and (max-width:768px) {
+
+  /*tablet*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20%
+  }
+
+  header nav ul li a {
+    background-color: #f00;
+    padding: 15px;
+    border-radius: 5%;
+    transition: padding .5s;
+  }
+
+  .curiosidades__cards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .curiosidades__cards__card{
+    width: 70%;
+  }
+
+  #mapa {
+    margin-top: 10%;
+    width: 80%;
+    height: 400px;
+  }
+
 }
