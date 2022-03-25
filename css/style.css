@@ -259,12 +259,18 @@ footer {
   height: 270px;
   background-color: #444;
   margin-top: 10%;
+  
+}
+
+footer span {
+  font-family: 'Archivo', sans-serif;
 }
 
 footer span a {
   text-decoration: underline;
   color: #000;
 }
+
 
 footer ul {
   display: flex;
